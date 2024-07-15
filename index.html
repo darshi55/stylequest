@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fashion Contest</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Montserrat:wght@300;400;600&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <img src="myntra-logo.png" alt="Myntra Logo" id="myntra-logo">
+            <div class="search-container">
+                <span class="search-icon">&#x1F50D;</span>
+                <input type="text" placeholder="Search Contest" id="search-bar">
+            </div>
+        </header>
+        <div class="main-content">
+            <div class="contest-banner">
+                <img src="your-image-url-1.jpg" alt="Contest XYZ">
+                <div class="banner-text">
+                    <button id="participate-btn" onclick="openContest('contest.html')">Participate Now</button>
+                </div>
+            </div>
+            <div class="contest-sections">
+                <div class="contest-card" onclick="openContest('contest1.html')">
+                    <img src="your-image-url-2.jpg" alt="Contest ABC">
+                    <div class="card-text">
+                        <h3> Vintage Vogue</h3>
+                        <p class="theme">Theme: Vintage Revival</p>
+                        <p class="prize">Upto 1.5 Lakh Cash Prize</p>
+                    </div>
+                </div>
+                <div class="contest-card" onclick="openContest('contest2.html')">
+                    <img src="your-image-url-3.jpg" alt="Contest EFG">
+                    <div class="card-text">
+                        <h3> Floral Fusion</h3>
+                        <p class="theme">Theme: Floral Fashion</p>
+                        <p class="prize">Upto 1.7 Lakh Cash Prize</p>
+                    </div>
+                </div>
+                <div class="contest-card" onclick="openContest('contest3.html')">
+                    <img src="your-image-url-4.jpg" alt="Contest HIJ">
+                    <div class="card-text">
+                        <h3> Red Carpet Runway</h3>
+                        <p class="theme">Theme: Red Carpet Glamour</p>
+                        <p class="prize">Upto 2.5 Lakh Cash Prize</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        function openContest(url) {
+            window.location.href = url;
+        }
+    </script>
+</body>
+
+</html>
